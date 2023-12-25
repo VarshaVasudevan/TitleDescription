@@ -5,8 +5,6 @@ var db=mongoose.connection
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
   });
 db.on("error",console.error.bind("error","connection error"))
  db.once("open",function(){
