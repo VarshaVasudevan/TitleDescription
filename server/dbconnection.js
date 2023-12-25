@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 const mongoURI = process.env.NODE_ENV === 'production' ? process.env.ATLAS_DB_URI : process.env.LOCAL_DB_URI;
 var db=mongoose.connection
 
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true , useFindAndModify: false });
 db.on("error",console.error.bind("error","connection error"))
  db.once("open",function(){
  console.log("connection successful")
