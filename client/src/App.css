@@ -1,0 +1,32 @@
+TitleDescription.css
+
+/* Header styles */
+.display-4 {
+  color:#007FFF;
+  margin-left: 25rem;
+  text-decoration: underline;
+  text-transform: uppercase; /* Header text color */
+}
+
+
+.form-control {
+  margin-bottom: 10px;
+  border-color:007FFF;
+  border-width: 0.2rem;
+  text-transform: uppercase; /* Adjust spacing between form controls */
+}
+.table-striped{
+  text-transform: uppercase;
+}
+.mb-4{
+text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
