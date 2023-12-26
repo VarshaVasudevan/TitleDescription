@@ -9,7 +9,6 @@ function TitleDescription() {
   const [items, setItems] = useState([]);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const apiUrl = 'https://textdescription2.onrender.com/';
 
   useEffect(() => {
     axios.get('http://localhost:5000/fetchData')
