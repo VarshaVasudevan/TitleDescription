@@ -1,67 +1,67 @@
-**##Project Title:DELTA_SIGMA 
-**
+**Project Title:DELTA_SIGMA **
+
 Overview The "Title Description" application is a simple CRUD (Create, Read, Update, Delete) web application built using the MERN stack (MongoDB, Express.js, React, Node.js). 
 This application allows users to manage a list of items with titles and descriptions. 
 
-##Project Description:
-1.Add Item:
+**Project Description:**
+**1.Add Item:**
 
 Users can add new items to the list by providing a title and description through a user-friendly form. List Display:
 
 The application displays a list of items on the page, showcasing each item's title and description.
 
-2.Update and Delete:
+**2.Update and Delete:**
 
 Users can update and delete items from the list. The update functionality allows users to modify the title and description of existing items. 
 
-##Responsive User Interface:
+**Responsive User Interface:**
 
 The user interface is designed to be simple, clean, and responsive, providing a seamless experience across different devices. 
 
 Technologies Used The application leverages the following technologies:
 
-1.Frontend:
+**1.Frontend:**
 
 React: A JavaScript library for building user interfaces. Axios: A promise-based HTTP client for making API requests. Bootstrap: A CSS framework for styling the user interface.
 
-2.Backend:
+**2.Backend:**
 
 Node.js: A JavaScript runtime for building server-side applications. Express.js: A web application framework for Node.js. MongoDB: A NoSQL database for storing item data. Frontend Setup How to Run Locally To run the application locally, follow these steps:
 
-##Frontend Setup Clone the repository:
+**##Frontend Setup Clone the repository:**
 
 bash Copy code 
 git clone git clone https://github.com/VarshaVasudevan/titledescription.git
 
-1.Navigate to the frontend directory:
+**1.Navigate to the frontend directory:**
 cd your-app-name/client 
  
-Install dependencies:
+**Install dependencies:**
 bash Copy code npm install
 
-Run the development server:
+**Run the development server:**
 bash Copy code npm start 
 
-2.Backend Setup Navigate to the backend directory:
+**2.Backend Setup Navigate to the backend directory:**
 bash Copy code cd your-app-name/server 
 
-Install dependencies:
+**Install dependencies:**
 bash Copy code npm install 
 
-Run the server:
+**Run the server:**
 bash Copy code npm start
 
-##API Documentation :The application utilizes the following API endpoints:
-
-2.Fetch All Items:
+**##API Documentation :The application utilizes the following API endpoints:
+**
+**2.Fetch All Items:**
 
 1.Endpoint: /fetchData Method: GET Response Format: json Copy code { "success": true, "data": [ { "_id": "item-id", "title": "Item Title", "description": "Item Description" }, // Additional items... ] }
 
-2.Add Item:
+**2.Add Item:**
 
 Endpoint: /insertdata Method: POST Request Payload: json Copy code { "title": "New Item Title", "description": "New Item Description" } Response Format: json Copy code { "_id": "new-item-id", "title": "New Item Title", "description": "New Item Description" } 
 
-3.Delete Item:
+**3.Delete Item:**
 Endpoint: /deleteItem/:id Method: DELETE Response Format: json Copy code { "success": true, "message": "Item deleted successfully" }
 
 ## Backend Installation and Setup
