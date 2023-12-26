@@ -151,6 +151,9 @@ Each item in the list has an update icon (pencil). Click the update icon to go t
 
 Each item in the list has a delete icon (trash). Click the delete icon to remove the item from the list.
 
+#Deployed link:
+1.Front end Deployed Link:https://titledescription.netlify.app/
+2.Back end Deployed Link:https://textdescription2.onrender.com/
 
 ## License
 
