@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
-const allowedOrigins = ['https://marvelous-mochi-1953d3.netlify.app/'];
+const allowedOrigins = ['https://658ad417215c8c9b3b6c9c20--adorable-kelpie-e03d5a.netlify.app/'];
 
 const corsOptions = {
   origin: function (origin, callback) {
