@@ -10,14 +10,20 @@ const port = process.env.PORT || 5000;
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
+const allowedOrigins = ['https://658aa626b2a7d787e74e8b3e--marvelous-mochi-1953d3.netlify.app'];
+
 const corsOptions = {
-    origin: function (origin, callback) {
-      // Your logic to allow or deny requests based on origin
-    },
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-    optionsSuccessStatus: 204,
-  };
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
   
   app.use(cors(corsOptions));
 app.use(cors());
