@@ -11,7 +11,7 @@ function TitleDescription() {
   const [description, setDescription] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/fetchData')
+    axios.get(`https://textdescription2.onrender.com/fetchData`)
       .then((response) => {
         setItems(response.data.data);
       })
@@ -19,7 +19,7 @@ function TitleDescription() {
   }, [items]);
 
   const addItem = () => {
-    axios.post('http://localhost:5000/insertdata', { title: title, description: description })
+    axios.post('https://textdescription2.onrender.com/insertdata', { title: title, description: description })
       .then((response) => {
         setItems([...items, response.data]);
         setTitle('');
@@ -29,7 +29,7 @@ function TitleDescription() {
   };
 
   const deleteItem = (itemId) => {
-    axios.delete(`http://localhost:5000/deleteItem/${itemId}`)
+    axios.delete(`https://textdescription2.onrender.com/deleteItem/${itemId}`)
       .then(() => {
         setItems(items.filter(item => item._id !== itemId));
       })

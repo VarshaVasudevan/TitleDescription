@@ -24,7 +24,7 @@ const UpdatePage = () => {
 
   const handleUpdate = () => {
     // Send a request to update the item
-    axios.put(`http://localhost:5000/updateItem/${id}`, {
+    axios.put(`https://textdescription2.onrender.com/updateItem/${id}`, {
       title: title,
       description: description,
     })
