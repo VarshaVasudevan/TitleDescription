@@ -10,7 +10,7 @@ const UpdatePage = () => {
 
   useEffect(() => {
     // Fetch item details based on the ID
-    axios.get(`https://textdescription2.onrender.com/deleteItem/${id}`)
+    axios.get(`https://textdescription2.onrender.com/fetchData/${id}`)
       .then((response) => {
         const items = response.data.data;
         // Assuming the API response has a 'data' field
